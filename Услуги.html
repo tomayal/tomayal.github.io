@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="Услуги.css">
+</head>
+<body>
+    <!-- Меню -->
+    <header>
+        <nav> 
+            <div class="left-menu">
+                <a class="logo" href="Главная страница.html">АвтоЭксперт</a>
+            </div>
+            <div class="right-menu">
+                <a class="menu-item" href="Главная страница.html">Главная</a>
+                <a class="menu-item" href="О компании.html">О компании</a>
+                <a class="menu-item" href="Услуги.html">Услуги</a>
+                <a class="menu-item" href="Запись.html">Запись</a>
+                <a class="menu-item" href="Новости и акции.html">Новости и акции</a>
+                <a class="menu-item" href="Контакты.html">Контакты</a>
+                <a class="call-button" href="Заказать звонок.html">Заказать звонок</a>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- Первый блок -->
+    <section>
+      <div class="categories">
+          <ul>
+              <li class="category active" data-category="suspension">Подвеска</li>
+              <li class="category" data-category="engine">Двигатель</li>
+              <li class="category" data-category="fuel-system">Топливная аппаратура</li>
+              <li class="category" data-category="interior">Салон</li>
+              <li class="category" data-category="steering">Рулевое управление</li>
+              <li class="category" data-category="transmission">КПП</li>
+              <li class="category" data-category="brake-system">Тормозная система</li>
+              <li class="category" data-category="diagnostics">Диагностика</li>
+              <li class="category" data-category="exhaust-system">Выхлопная система</li>
+          </ul>
+      </div>
+      <div class="services">
+          <ul class="service-list active" data-category="suspension">
+              <li>Снятие/установка рычага передней подвески <br> от 1200 ₽</li>
+              <li>Замена шаровой опоры <br> от 1000 ₽</li>
+              <li>Замена тяг стабилизатора <br> от 600 ₽</li>
+              <li>Замена ступичного подшипника <br> от 800 ₽</li>
+              <li>Замена амортизатора <br> от 600 ₽</li>
+              <li>Замена стоек <br> От 2000 ₽</li>
+              <li>Замена пружин передней и задней подвески <br> От 3000 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="engine">
+              <li>Замена масла в ДВС <br> 500 ₽</li>
+              <li>Замена воздушного фильтра <br> от 200 ₽</li>
+              <li>Замена жидкости охлаждения (антифриза) <br> от 1000 ₽</li>
+              <li>Замена ремня (цепи) привода ГРМ <br> от 3000 ₽</li>
+              <li>Замена свечи зажигания <br> от 150 ₽</li>
+              <li>Замена жидкости кондиционера <br> От 1600 ₽ </li>
+          </ul>
+          <ul class="service-list" data-category="fuel-system">
+              <li>Замена топливного фильтра <br> от 400 ₽</li>
+              <li>Замена топливного насоса <br> от 400 ₽</li>
+              <li>Замена топливной трассы <br> от 2000 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="interior">
+              <li>Замена фильтра вентиляции салона <br> от 300 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="steering">
+              <li>Замена рулевого наконечника <br> от 400 ₽</li>
+              <li>Замена рулевой тяги <br> от 600 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="transmission">
+              <li>Замена комплекта сцепления <br> от 4000 ₽</li>
+              <li>Замена масла в КПП <br> от 600 ₽</li>
+              <li>Замена масла в АКПП <br> от 1000 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="brake-system">
+              <li>Замена тормозной жидкости <br> от 800 ₽</li>
+              <li>Замена тормозных колодок <br> от 800 ₽</li>
+              <li>Замена тормозного диска <br> от 1000 ₽</li>
+              <li>Замена тормозного шланга <br> от 500 ₽</li>
+              <li>Восстановление тормозного суппорта <br> от 1500 ₽</li>
+              <li>Прокачка гидропривода тормозной системы <br> от 1000 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="diagnostics">
+              <li>Диагностика электросистемы автомобиля <br> от 1000 ₽</li>
+              <li>Компьютерная диагностика двигателя <br> от 1500 ₽</li>
+              <li>Диагностика ходовой части <br> от 800 ₽</li>
+          </ul>
+          <ul class="service-list" data-category="exhaust-system">
+              <li>Замена глушителя <br> от 1500 ₽</li>
+              <li>Ремонт выхлопной системы <br> от 1000 ₽</li>
+          </ul>
+      </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedCategory = urlParams.get('category');
+    
+        const categories = document.querySelectorAll('.category');
+        const serviceLists = document.querySelectorAll('.service-list');
+    
+        let categoryFound = false;
+    
+        categories.forEach(category => {
+            if (category.getAttribute('data-category') === selectedCategory) {
+                categoryFound = true;
+                category.classList.add('active');
+            } else {
+                category.classList.remove('active');
+            }
+        });
+    
+        serviceLists.forEach(list => {
+            if (list.getAttribute('data-category') === selectedCategory) {
+                list.classList.add('active');
+            } else {
+                list.classList.remove('active');
+            }
+        });
+    
+        if (!categoryFound && categories.length > 0) {
+            categories[0].classList.add('active');
+            serviceLists[0].classList.add('active');
+        }
+    
+        categories.forEach(category => {
+            category.addEventListener('click', function(){
+                const selectedCategory = this.getAttribute('data-category');
+    
+                categories.forEach(cat => cat.classList.remove('active'));
+                this.classList.add('active');
+    
+                serviceLists.forEach(list => {
+                    if (list.getAttribute('data-category') === selectedCategory) {
+                        list.classList.add('active');
+                    } else {
+                        list.classList.remove('active');
+                    }
+                });
+            });
+        });
+    });
+    </script>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-container">
+            <div class="working-hours-column">
+                <p class="contact-label">Режим работы:</p>
+                <p class="contact-data">пн-пт: 09-19</p>
+                <p class="contact-data">сб: 09-18</p>
+                <p class="contact-data">вс: выходной</p>
+            </div>
+            <div class="contact-column">
+                <p class="contact-label">Контакты:</p>
+                <p class="contact-data">телефон: +7(911)480-72-40</p>
+                <p class="contact-data">email: AutoExpert@mail.ru</p>
+            </div>
+            <div class="address-column">
+                <p class="contact-label">Адрес:</p>
+                <p class="contact-data">г. Петрозаводск, ул.Мурманская, д.28</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

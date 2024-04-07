@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+        VK.init({ apiId: 237800962, onlyWidgets: true });
+    </script>
+    <title>О компании</title>
+    <link rel="stylesheet" href="О компании.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <!-- Меню -->
+    <header>
+        <nav> 
+            <div class="left-menu">
+                <a class="logo" href="Главная страница.html">АвтоЭксперт</a>
+            </div>
+            <div class="right-menu">
+                <a class="menu-item" href="Главная страница.html">Главная</a>
+                <a class="menu-item" href="О компании.html">О компании</a>
+                <a class="menu-item" href="Услуги.html">Услуги</a>
+                <a class="menu-item" href="Запись.html">Запись</a>
+                <a class="menu-item" href="Новости и акции.html">Новости и акции</a>
+                <a class="menu-item" href="Контакты.html">Контакты</a>
+                <a class="call-button" href="Заказать звонок.html">Заказать звонок</a>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- Первый блок-->
+    <section class="company-section">
+        <div class="company-image">
+            <img src="img/Механик.png" alt="Мастер">
+        </div>
+        <div class="company-description">
+            <h2>О компании</h2>
+            <p>Мы являемся ведущими специалистами в области автомобильного обслуживания и ремонта в городе Петрозаводск. Наша команда профессионалов обладает богатым опытом и глубокими знаниями в автомобильной индустрии, что позволяет нам предоставлять высококачественные услуги для всех марок и моделей автомобилей.</p>
+            <p>В нашем автосервисе мы стремимся создать комфортную и доверительную атмосферу для наших клиентов. Мы понимаем, что ваш автомобиль - это не просто транспортное средство, это часть вашей жизни. Поэтому мы уделяем особое внимание каждой детали и работаем с максимальной ответственностью, чтобы ваш автомобиль всегда был в безопасном и исправном состоянии.</p>
+            <p>Независимо от того, требуется ли вам регулярное техническое обслуживание, скорая помощь при поломке, диагностика неисправностей или косметический ремонт кузова, мы обеспечим вас полным спектром услуг. Мы используем только самое современное оборудование и проверенные запчасти, чтобы гарантировать надежность и долговечность каждого произведенного нами ремонта.</p>
+            <p>Наша цель - превзойти ожидания наших клиентов и установить долгосрочные отношения, основанные на доверии и качестве нашей работы. Мы стремимся предоставить вам безупречный сервис и удовлетворение от всего, что мы делаем.</p>
+            <p>Приходите в наш автосервис и дайте нам возможность позаботиться о вашем автомобиле. Запишитесь на прием или свяжитесь с нами сегодня, чтобы получить бесплатную консультацию от нашей дружелюбной команды. Мы готовы помочь вам вернуть ваш автомобиль на дорогу в оптимальном состоянии! Ваш комфорт - наша забота.</p>
+        </div>
+    </section>
+
+    <!-- Второй блок-->
+    <section class="team-block">
+        <h2 class="team-title">Наша команда</h2>
+        <div class="slider">
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Александр.jpg" alt="Фото Александра">
+                <div class="item_col">
+                    <h2>Александр</h2>
+                    <h3>Главный механик по ремонту двигателей</h3>
+                    <p>Александр - высококвалифицированный главный механик с 15-летним опытом. Специализируется на ремонте и диагностике различных типов двигателей. Эксперт в выявлении сложных неисправностей и проведении тщательного ремонта с использованием современных методов.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Елена.jpg" alt="Фото Елены">
+                <div class="item_col">
+                    <h2>Елена</h2>
+                    <h3>Мастер-приемщик</h3>
+                    <p>Елена обладает богатым опытом в области приема и консультирования клиентов по вопросам автомобильного обслуживания. Она отличается высоким уровнем профессионализма, вниманием к деталям и умением найти наилучшее решение для потребностей каждого клиента.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Антон.jpg" alt="Фото Антона">
+                <div class="item_col">
+                    <h2>Антон</h2>
+                    <h3>Техник-диагност</h3>
+                    <p>Антон обладает экспертными знаниями в области диагностики автомобилей с использованием современного оборудования. Он специализируется на выявлении сложных технических проблем и предоставлении точных рекомендаций по ремонту.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Михаил.jpg" alt="Фото Михаила">
+                <div class="item_col">
+                    <h2>Михаил</h2>
+                    <h3>Автоэлектрик</h3>
+                    <p>Михаил является опытным специалистом с 12-летним стажем по ремонту электрических систем автомобилей. Он обладает глубокими знаниями в области электрики и проводки, и всегда готов решить любые проблемы с электроникой автомобиля.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Сергей.jpg" alt="Фото Сергея">
+                <div class="item_col">
+                    <h2>Сергей</h2>
+                    <h3>Кузовной мастер</h3>
+                    <p>Сергей обладает богатым 18-летним стажем в области кузовного ремонта. Он специализируется на восстановлении кузова после аварий, а также на проведении косметических ремонтных работ.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Дмитрий.jpg" alt="Фото Дмитрия">
+                <div class="item_col">
+                    <h2>Дмитрий</h2>
+                    <h3>Механик-шиномонтажник</h3>
+                    <p>Дмитрий является опытным специалистом с 7-летним стажем по шиномонтажу и балансировке. Он обладает глубокими знаниями в области подбора и установки шин, а также проведения технического обслуживания подвески.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <img src="img/Ольга.jpg" alt="Фото Ольги">
+                <div class="item_col">
+                    <h2>Ольга</h2>
+                    <h3>Мастер по обслуживанию кондиционеров</h3>
+                    <p>Ольга обладает 9-летним стажем и специализируется на обслуживании и ремонте автомобильных кондиционеров. Она обладает высоким уровнем профессионализма и всегда готова предложить оптимальные решения для улучшения работы кондиционеров.</p>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    
+            <div class="arrow_mobile">
+                <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+                <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </div>
+    </section>
+      <script>
+        // Устанавливаем начальный индекс слайда
+        let slideIndex = 1;
+
+        // Вызываем функцию отображения слайдов с начальным индексом
+        showSlides(slideIndex);
+
+        // Функция для перехода к следующему слайду
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+
+        // Функция для перехода к предыдущему слайду
+        function previousSlide() {
+            showSlides(slideIndex -= 1);  
+        }
+
+        // Функция для указания текущего слайда
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Функция отображения слайдов
+        function showSlides(n) {
+        // Получаем все элементы слайдов
+        let slides = document.getElementsByClassName("item");
+
+        // Проверяем, не выходит ли индекс за границы
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        // Скрываем все слайды
+        for (let slide of slides) {
+            slide.style.display = "none";
+        }
+
+        // Показываем текущий слайд
+        slides[slideIndex - 1].style.display = "flex";
+        }
+    </script>
+
+    <!-- Третий блок-->
+    <section class="reviews-block">
+        <h2 class="reviews-title">Отзывы</h2>
+        <div class="message left">
+            <img src="img/Пользователь1.png" alt="Пользователь1">
+            <div class="bubble">
+                <div class="review">
+                    <p>Я обратился в автосервис АвтоЭксперт для замены масла и технического обслуживания. Был поражен профессионализмом и вниманием к деталям каждой работы. Рекомендую этот автосервис всем владельцам автомобилей!</p>
+                    <div class="triangle-left"></div>
+                </div>
+            </div>
+        </div>
+        <div class="message right">
+            <div class="bubble">
+                <div class="review">
+                    <p>Спасибо команде АвтоЭксперт за оперативное решение проблемы с моим автомобилем. Внимательный подход к клиентам, качественный ремонт и дружелюбная атмосфера делают этот автосервис непревзойденным!</p>
+                    <div class="triangle-right"></div>
+                </div>
+            </div>
+            <img src="img/Пользователь2.png" alt="Пользователь2">
+        </div>
+        <div class="message left">
+            <img src="img/Пользователь3.png" alt="Пользователь3">
+            <div class="bubble">
+                <div class="review">
+                    <p>Мне пришлось обратиться в автосервис АвтоЭксперт для косметического ремонта кузова после ДТП. Результат превзошел мои ожидания - автомобиль выглядит как новый! Отличная работа, спасибо!</p>
+                    <div class="triangle-left"></div>
+                </div>
+            </div>
+        </div>
+        <div class="message right">
+            <div class="bubble">
+                <div class="review">
+                    <p>Я давно искал надежный автосервис, и наконец нашел АвтоЭксперт. Профессиональный подход, качественный ремонт и приятная атмосфера делают это место идеальным для обслуживания моего автомобиля. Рекомендую всем!</p>
+                    <div class="triangle-right"></div>
+                </div>
+            </div>
+            <img src="img/Пользователь4.png" alt="Пользователь4">
+        </div>
+    </section>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-container">
+            <div class="working-hours-column">
+                <p class="contact-label">Режим работы:</p>
+                <p class="contact-data">пн-пт: 09-19</p>
+                <p class="contact-data">сб: 09-18</p>
+                <p class="contact-data">вс: выходной</p>
+            </div>
+            <div class="contact-column">
+                <p class="contact-label">Контакты:</p>
+                <p class="contact-data">телефон: +7(911)480-72-40</p>
+                <p class="contact-data">email: AutoExpert@mail.ru</p>
+            </div>
+            <div class="address-column">
+                <p class="contact-label">Адрес:</p>
+                <p class="contact-data">г. Петрозаводск, ул.Мурманская, д.28</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Put this div tag to the place, where the Comments block will be -->
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+        VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+    </script>
+</body>
+</html>

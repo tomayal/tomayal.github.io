@@ -1,0 +1,173 @@
+/* Меню */
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .left-menu {
+    order: 1;
+  }
+  
+  .right-menu {
+    order: 2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-menu .menu-item {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  nav a.logo {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  nav a.call-button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 8px 20px;
+    margin-left: 20px;
+  }
+  
+  nav a:hover,
+  nav .call-button:hover,
+  .buttons button:hover {
+    color: #ff9900;
+  }
+  
+  nav a.call-button:hover,
+  .buttons button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .menu-item {
+    margin-right: 0;
+  }
+
+/* Первый блок */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.block {
+    display: flex;
+}
+
+.appointment-section {
+    width: 550px;
+    padding: 20px;
+}
+
+.appointment-form {
+    margin: 3px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.appointment-form h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.appointment-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="tel"],
+.appointment-form textarea,
+.appointment-form select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.appointment-form input[type="submit"] {
+    background-color: #ff9900;
+    font-weight: bold;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.appointment-form input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-fields input[type="text"] {
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+/* Подвал */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-column {
+    flex: 1;
+    text-align: left;
+}
+
+.working-hours-column {
+    flex: 1;
+    text-align: left;
+    padding-left: 125px;
+}
+
+.address-column {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}

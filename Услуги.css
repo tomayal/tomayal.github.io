@@ -1,0 +1,156 @@
+/* Меню */
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.left-menu {
+  order: 1;
+}
+
+.right-menu {
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+
+.right-menu .menu-item {
+  margin-right: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+nav a.logo {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+nav a.call-button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin-left: 20px;
+}
+
+nav a:hover,
+nav .call-button:hover,
+.buttons button:hover {
+  color: #ff9900;
+}
+
+nav a.call-button:hover,
+.buttons button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu-item {
+  margin-right: 0;
+}
+
+/* Первый блок */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0; 
+  padding: 20px;
+  background-color: #f2f2f2; 
+  box-sizing: border-box; 
+}
+
+.categories {
+  width: 200px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.categories li.active {
+  background-color: #ccc;
+}
+
+.services {
+  flex-grow: 1;
+  width: calc(100% - 200px);
+  margin-left: 20px;
+}
+
+.service-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.service-list.active {
+  display: block;
+}
+
+.service-list li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Подвал */
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-column,
+.working-hours-column,
+.address-column {
+  flex: 1;
+  text-align: left;
+}
+
+.working-hours-column {
+  padding-left: 125px;
+}
+
+.contact-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
